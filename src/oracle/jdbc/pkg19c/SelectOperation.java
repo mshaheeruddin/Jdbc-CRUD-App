@@ -113,7 +113,9 @@ String table = "";
         switch(table) {
   case "Customer":
     CustomerTableInsert cti = new CustomerTableInsert();
-        cti.setVisible(true);
+        cti.pack();
+        cti.setLocationRelativeTo(null);
+        cti.setVisible(false);
         this.dispose();
     break;
   case "":
