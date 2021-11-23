@@ -115,7 +115,7 @@ String table = "";
     CustomerTableInsert cti = new CustomerTableInsert();
         cti.pack();
         cti.setLocationRelativeTo(null);
-        cti.setVisible(false);
+        cti.setVisible(true);
         this.dispose();
     break;
   case "":
