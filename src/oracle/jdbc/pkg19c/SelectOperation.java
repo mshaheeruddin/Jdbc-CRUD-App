@@ -17,6 +17,9 @@ import javax.swing.table.DefaultTableModel;
 /**
  *
  * @author Muhammad Shaheer
+ * DATABASE Project Fall 2021
+ * 
+ * 
  */
 public class SelectOperation extends javax.swing.JFrame {
     Connection conn = OracleJdbc19c.getConnection();
