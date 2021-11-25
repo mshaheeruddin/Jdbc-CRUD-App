@@ -161,10 +161,10 @@ public class CustomerTableInsert extends javax.swing.JFrame {
                         .addGap(8, 8, 8)
                         .addComponent(password_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(89, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(125, 125, 125)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(insert_button, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(126, 126, 126))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -229,7 +229,10 @@ try {
             
             if (rows > 0 ) {
                 AnotherOperation ao = new AnotherOperation();
+                ao.pack();
+                ao.setLocationRelativeTo(null);
                 ao.setVisible(true);
+                this.dispose();
                 
             }
             conn.close();

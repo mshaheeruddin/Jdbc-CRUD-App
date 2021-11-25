@@ -41,7 +41,12 @@ public class OracleJdbc19c {
         OracleJdbc19c obj = new OracleJdbc19c();
         try {
             Connection conn = OracleJdbc19c.getConnection();
+            SelectTable st = new SelectTable();
+                st.pack();
+                st.setLocationRelativeTo(null);
+                st.setVisible(true);
             conn.close();
+            
         } catch (SQLException ex) {
             Logger.getLogger(OracleJdbc19c.class.getName()).log(Level.SEVERE, null, ex);
         }

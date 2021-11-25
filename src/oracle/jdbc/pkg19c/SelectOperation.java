@@ -73,6 +73,11 @@ String table = "";
         });
 
         jButton4.setText("Delete");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -133,6 +138,12 @@ String table = "";
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        CustomerTableUpdate ctu = new CustomerTableUpdate();
+        ctu.pack();
+        ctu.setLocationRelativeTo(null);
+        ctu.setVisible(true);
+        this.dispose();
+        
     }//GEN-LAST:event_jButton3ActionPerformed
 
     public ArrayList<Customer> customerRecord() {
@@ -179,11 +190,22 @@ String table = "";
     private void ViewTableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewTableActionPerformed
         // TODO add your handling code here:
         CustomerTableRead ct = new CustomerTableRead();
+        ct.pack();
+        ct.setLocationRelativeTo(null);
         ct.setVisible(true);
         this.dispose();
       
     
     }//GEN-LAST:event_ViewTableActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        CustomerTableDelete ct = new CustomerTableDelete();
+        ct.pack();
+        ct.setLocationRelativeTo(null);
+        ct.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
